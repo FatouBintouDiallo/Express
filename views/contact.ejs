@@ -1,0 +1,67 @@
+<!-- contact.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>contact</title>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif ;background-color: black;
+margin: 0;">
+    <header style="  border-bottom: 2px solid #ccc;">
+        <nav style="background-color:black ;display: flex; justify-content: space-between">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS20DRfxIAzwIP9EzdkhShv4ZoikfxAAVTPQ&usqp=CAU" alt="" width="80">
+            <ul style=" display: flex;  list-style: none;  padding:   20px;" >
+                <li><a href="/" style="text-decoration: none; font-size: 20px;margin-left: 60px; color: white;">Acceuil</a></li>
+                <li><a href="services"  style="text-decoration: none;margin-left: 60px; font-size: 20px; color: white;">Nos services</a></li>
+                <li><a href="contact"  style="text-decoration: none;  margin-left: 60px;font-size: 20px; color: white;">Contactez-nous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+      <h1 style="color: white; text-align: center;">Contactez-nous</h1>
+      <p style="color: white;text-align: center;">N'hésitez pas à nous contacter pour toute question ou information supplémentaire :</p>
+   <div style="display: flex; justify-content: space-between;">
+  <div>
+      <form action="/submit-contact" method="post">
+      <div style="color: white;margin-bottom: 10px">
+        <label for="name">Nom    :</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+        <div style="color: white; margin-bottom: 10px">
+        <label for="email">E-mail   :</label>
+        <input type="email" id="email" name="email" required>
+        </div>
+          <div style="color: white;margin-bottom: 10px">
+        <label for="message">SMS :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+    
+    <div>
+        <button type="submit">Envoyer</button>
+      </div>
+      </form>
+      </div>
+      <div style="color: white;">
+      <p>Télèphone  : 785242648</p>
+      <p>Télèphone  : 708654321</p>
+      <p>E-mail  : proSoliution@gmail.com</p>
+    </div>
+  </div>
+    </section>
+    <footer style="border-top: 2px solid #ccc;
+    ">
+    <div style="color: white;text-align:center ;">
+      <p >&copy; 2024 Mon Entreprise. Tous droits réservés.</p>
+      
+      <p> Adresse : Rue 22 en face Casino</p>
+    </div>
+    </footer>
+</body>
+</html>
